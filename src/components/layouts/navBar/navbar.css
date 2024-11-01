@@ -1,0 +1,38 @@
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(118, 190, 154);
+  align-items: center;
+  height: 50px;
+  padding: 0 50px;
+}
+
+.container-nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+li {
+  list-style: none;
+}
+
+.container-nav-dark {
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  align-items: center;
+  height: 50px;
+  padding: 0 50px;
+}
+
+.container-nav-dark ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+a {
+  text-decoration: blanchedalmond;
+  color: black;
+}

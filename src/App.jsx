@@ -1,0 +1,46 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ItemListContainer from "./components/pages/itemListContainer/ItemListContainer";
+import CartContainer from "./components/pages/cart/CartContainer";
+import Navbar from "./components/layouts/navBar/Navbar";
+import ItemDetailContainer from "./components/pages/itemDetail/ItemDetailContainer";
+import { CartContextProvider } from "./context/cartContext";
+import { Toaster } from "sonner";
+import Checkout from "./components/pages/checkout/checkout";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Toaster
+        richColors
+        toastOptions={{
+          duration: 2000,
+        }}
+        expand
+        // expand={false}
+      />
+      <CartContextProvider>
+        <Navbar />
+        <Routes>
+          <Route path={"/"} element={<ItemListContainer />} />
+          <Route
+            path={"/category/:categoryName"}
+            element={<ItemListContainer />}
+          />
+
+          <Route path={"/cart"} element={<CartContainer />} />
+
+          <Route
+            path={"/productDetail/:id"}
+            element={<ItemDetailContainer />}
+          />
+
+          <Route path={"/checkout"} element={<Checkout />} />
+
+          <Route path="*" element={<h2>404 not found</h2>} />
+        </Routes>
+      </CartContextProvider>
+    </BrowserRouter>
+  );
+}
+
+export default App;

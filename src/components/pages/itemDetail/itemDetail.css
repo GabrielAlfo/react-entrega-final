@@ -1,0 +1,28 @@
+.message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.message {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.message-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.message-text {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
