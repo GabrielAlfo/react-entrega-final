@@ -1,8 +1,16 @@
-# React + Vite
+# Página de Indumentaria  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es el resultado final de mi aprendizaje en React.js. Es una aplicación web de una tienda de indumentaria que permite a los usuarios navegar por la tienda, ver detalles de los productos, agregarlos al carrito de compras y confirmar la compra.  
 
-Currently, two official plugins are available:
+## Características  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Catálogo de productos con filtros y búsqueda.  
+- Detalles de productos con imágenes, descripción y opciones de personalización.  
+- Carrito de compras con la capacidad de agregar, eliminar y modificar productos.    
+- Diseño responsive y moderno.  
+
+## Tecnologías utilizadas  
+
+- React.js  
+- Axios  
+- Firebase (Hosting y Firestore)  
